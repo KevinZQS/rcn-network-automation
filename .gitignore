@@ -1,0 +1,12 @@
+# containerlab runtime state - regenerated on every deploy
+clab-rcn-lab2/
+clab-*/
+
+# large images
+*.gz
+*.img
+*.qcow2
+
+# python
+__pycache__/
+*.pyc

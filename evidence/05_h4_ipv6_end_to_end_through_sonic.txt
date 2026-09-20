@@ -1,0 +1,15 @@
+# H4 IPv6 End-to-End Through SONiC
+# Captured: 2026-09-07T20:31:38.088853
+
+--- ping6 ---
+PING 2001:db8:3000:100::10 (2001:db8:3000:100::10): 56 data bytes
+64 bytes from 2001:db8:3000:100::10: seq=0 ttl=64 time=11.166 ms
+64 bytes from 2001:db8:3000:100::10: seq=1 ttl=64 time=5.561 ms
+64 bytes from 2001:db8:3000:100::10: seq=2 ttl=64 time=6.617 ms
+
+--- 2001:db8:3000:100::10 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 5.561/7.781/11.166 ms
+
+--- wget ---
+<h1>Hello World - RCN Lab 1</h1>

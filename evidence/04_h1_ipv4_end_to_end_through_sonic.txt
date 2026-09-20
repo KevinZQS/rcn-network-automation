@@ -1,0 +1,15 @@
+# H1 IPv4 End-to-End Through SONiC
+# Captured: 2026-09-07T20:31:07.271916
+
+--- ping ---
+PING 10.30.0.10 (10.30.0.10): 56 data bytes
+64 bytes from 10.30.0.10: seq=0 ttl=59 time=40.073 ms
+64 bytes from 10.30.0.10: seq=1 ttl=59 time=6.050 ms
+64 bytes from 10.30.0.10: seq=2 ttl=59 time=13.191 ms
+
+--- 10.30.0.10 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 6.050/19.771/40.073 ms
+
+--- wget ---
+<h1>Hello World - RCN Lab 1</h1>

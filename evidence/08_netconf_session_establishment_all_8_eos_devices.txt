@@ -1,0 +1,11 @@
+# NETCONF Session Establishment - All 8 EOS Devices
+# Captured: 2026-09-07T20:32:58.132283
+
+R1 (172.20.20.12): session-id = 2723034985
+R2 (172.20.20.2): session-id = 2672100222
+R3 (172.20.20.17): session-id = 3856434858
+R4 (172.20.20.10): session-id = 841566933
+S1 (172.20.20.5): session-id = NOT FOUND
+S2 (172.20.20.6): session-id = 1478305718
+S3 (172.20.20.3): session-id = 1833655408
+S4 (172.20.20.13): session-id = 375317724

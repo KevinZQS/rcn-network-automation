@@ -1,0 +1,47 @@
+# R5 (SONiC) Route Tables - BGP route selected and installed
+# Captured: 2026-09-07T20:31:04.384592
+
+--- IPv4 ---
+Codes: K - kernel route, C - connected, L - local, S - static,
+       R - RIP, O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric, t - Table-Direct,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+IPv4 unicast VRF default:
+B>* 0.0.0.0/0 [20/0] via 10.20.0.21, Ethernet0, weight 1, 02:51:43
+  *                  via 10.20.0.25, Ethernet4, weight 1, 02:51:43
+C>* 10.20.0.20/30 is directly connected, Ethernet0, weight 1, 02:53:21
+C>* 10.20.0.24/30 is directly connected, Ethernet4, weight 1, 02:53:21
+C>* 10.30.0.0/24 is directly connected, Ethernet8, weight 1, 02:53:21
+C>* 10.255.0.5/32 is directly connected, Loopback0, weight 1, 02:53:21
+C>* 172.20.20.0/24 is directly connected, eth0, weight 1, 02:53:21
+
+--- IPv6 ---
+Codes: K - kernel route, C - connected, L - local, S - static,
+       R - RIPng, O - OSPFv3, I - IS-IS, B - BGP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric, t - Table-Direct,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+IPv6 unicast VRF default:
+B>* ::/0 [20/0] via 2001:db8:2000:6::1, Ethernet0, weight 1, 02:51:43
+  *             via 2001:db8:2000:7::1, Ethernet4, weight 1, 02:51:43
+C>* 2001:db8:2000:6::/64 is directly connected, Ethernet0, weight 1, 02:53:21
+C>* 2001:db8:2000:7::/64 is directly connected, Ethernet4, weight 1, 02:53:21
+C>* 2001:db8:3000:100::/64 is directly connected, Ethernet8, weight 1, 02:53:19
+K * 2001:db8:3000:100::/64 [0/256] is directly connected, Ethernet8, weight 1, 02:53:20
+C>* 2001:db8:ffff::5/128 is directly connected, Loopback0, weight 1, 02:53:21
+C>* 3fff:172:20:20::/64 is directly connected, eth0, weight 1, 02:53:21
+C * fe80::/64 is directly connected, eth3, weight 1, 02:53:12
+C * fe80::/64 is directly connected, eth2, weight 1, 02:53:12
+C * fe80::/64 is directly connected, eth1, weight 1, 02:53:12
+C * fe80::/64 is directly connected, eth0, weight 1, 02:53:21
+C * fe80::/64 is directly connected, dummy, weight 1, 02:53:21
+C * fe80::/64 is directly connected, Bridge, weight 1, 02:53:21
+C * fe80::/64 is directly connected, Loopback0, weight 1, 02:53:21
+C * fe80::/64 is directly connected, Ethernet8, weight 1, 02:53:21
+C * fe80::/64 is directly connected, Ethernet4, weight 1, 02:53:21
+C>* fe80::/64 is directly connected, Ethernet0, weight 1, 02:53:21

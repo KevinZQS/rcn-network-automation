@@ -1,0 +1,27 @@
+# R5 (SONiC) BGP Summary
+# Captured: 2026-09-07T20:30:38.580623
+
+
+IPv4 Unicast Summary:
+BGP router identifier 10.255.0.5, local AS number 65100 VRF default vrf-id 0
+BGP table version 3
+RIB entries 2, using 256 bytes of memory
+Peers 2, using 47 KiB of memory
+
+Neighbor        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc
+10.20.0.21      4      65000       204       176        3    0    0 02:51:17            1        2 L3_TO_R3
+10.20.0.25      4      65000       207       177        3    0    0 02:52:22            1        2 L3_TO_R4
+
+Total number of neighbors 2
+
+IPv6 Unicast Summary:
+BGP router identifier 10.255.0.5, local AS number 65100 VRF default vrf-id 0
+BGP table version 3
+RIB entries 2, using 256 bytes of memory
+Peers 2, using 47 KiB of memory
+
+Neighbor           V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc
+2001:db8:2000:6::1 4      65000       206       176        3    0    0 02:51:17            1        2 L3_TO_R3_V6
+2001:db8:2000:7::1 4      65000       208       177        3    0    0 02:52:23            1        2 L3_TO_R4_V6
+
+Total number of neighbors 2

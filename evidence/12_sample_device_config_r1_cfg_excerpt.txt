@@ -1,0 +1,43 @@
+# Sample Device Config (R1.cfg excerpt)
+# Captured: 2026-09-07T20:33:08.113208
+
+hostname R1
+!
+username admin privilege 15 role network-admin secret 0 admin
+!
+vrf instance MGMT
+!
+ip routing
+!
+ipv6 unicast-routing
+!
+interface Management0
+   description OOB_MGMT
+   vrf MGMT
+   ip address dhcp
+!
+management api http-commands
+   no shutdown
+   protocol https
+   vrf MGMT
+      no shutdown
+!
+snmp-server community public ro
+snmp-server vrf MGMT
+snmp-server host 172.20.20.13 vrf MGMT version 2c public
+snmp-server enable traps snmp link-down
+snmp-server enable traps snmp link-up
+!
+management api gnmi
+   transport grpc default
+      vrf MGMT
+   no shutdown
+!
+logging vrf MGMT host 172.20.20.13
+logging vrf MGMT source-interface Management0
+!
+management api netconf
+   transport ssh default
+      vrf MGMT
+   no shutdown
+!

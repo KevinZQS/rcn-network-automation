@@ -1,0 +1,15 @@
+apiVersion: 1
+datasources:
+  - name: influxdb
+    type: influxdb
+    access: proxy
+    uid: rcn-influx
+    url: http://172.20.20.17:8086
+    isDefault: true
+    jsonData:
+      version: Flux
+      organization: rcn
+      defaultBucket: telemetry
+      tlsSkipVerify: true
+    secureJsonData:
+      token: rcn-telemetry-token

@@ -1,0 +1,138 @@
+# gNMI Query - All 8 EOS Devices
+# Captured: 2026-09-07T20:32:33.028897
+
+--- R1 (172.20.20.12) ---
+[
+  {
+    "source": "172.20.20.12:6030",
+    "timestamp": 1788834751665170628,
+    "time": "2026-09-08T02:32:31.665170628Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "R1"
+        }
+      }
+    ]
+  }
+]
+
+--- R2 (172.20.20.2) ---
+[
+  {
+    "source": "172.20.20.2:6030",
+    "timestamp": 1788834751842281920,
+    "time": "2026-09-08T02:32:31.84228192Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "R2"
+        }
+      }
+    ]
+  }
+]
+
+--- R3 (172.20.20.17) ---
+[
+  {
+    "source": "172.20.20.17:6030",
+    "timestamp": 1788834752000222055,
+    "time": "2026-09-08T02:32:32.000222055Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "R3"
+        }
+      }
+    ]
+  }
+]
+
+--- R4 (172.20.20.10) ---
+[
+  {
+    "source": "172.20.20.10:6030",
+    "timestamp": 1788834752181630947,
+    "time": "2026-09-08T02:32:32.181630947Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "R4"
+        }
+      }
+    ]
+  }
+]
+
+--- S1 (172.20.20.5) ---
+[
+  {
+    "source": "172.20.20.5:6030",
+    "timestamp": 1788834752357457420,
+    "time": "2026-09-08T02:32:32.35745742Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "S1"
+        }
+      }
+    ]
+  }
+]
+
+--- S2 (172.20.20.6) ---
+[
+  {
+    "source": "172.20.20.6:6030",
+    "timestamp": 1788834752552748846,
+    "time": "2026-09-08T02:32:32.552748846Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "S2"
+        }
+      }
+    ]
+  }
+]
+
+--- S3 (172.20.20.3) ---
+[
+  {
+    "source": "172.20.20.3:6030",
+    "timestamp": 1788834752762635544,
+    "time": "2026-09-08T02:32:32.762635544Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "S3"
+        }
+      }
+    ]
+  }
+]
+
+--- S4 (172.20.20.13) ---
+[
+  {
+    "source": "172.20.20.13:6030",
+    "timestamp": 1788834753016010355,
+    "time": "2026-09-08T02:32:33.016010355Z",
+    "updates": [
+      {
+        "Path": "system/config/hostname",
+        "values": {
+          "system/config/hostname": "S4"
+        }
+      }
+    ]
+  }
+]
